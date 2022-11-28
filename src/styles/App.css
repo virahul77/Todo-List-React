@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
+  color: white;
+}
+#main{
+  background-color: #502f61;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.header {
+  padding: 0.7rem;
+  background-color: rgb(30, 22, 70);
+  color: white;
+  font-weight: bolder;
+  font-size: 1.7rem;
+  text-align: center;
+}
+.side-nav {
+  list-style: none;
+  float: right;
+}
+.side-nav li {
+  box-shadow: -7px 7px 7px rgba(0,0,0);
+  background-color: #751792;
+  border: 2px solid black;
+  margin: 0.5rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s linear;
+}
+.side-nav li:hover {
+  transform: scaleX(1.1);
+  opacity: 0.9;
+  cursor: pointer;
+}
+.side-nav li svg {
+  margin: 0 5px;
+  padding: 2px;
+}
+.box {
+  border-bottom: 1px solid rgb(203, 203, 203);
+  width: 70%;
+  padding: 10px;
+  padding-bottom: 0;
+}
+.main-section {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: rgb(78, 96, 114);
+  box-shadow: -10px 10px 6px rgb(58, 50, 50);
+  min-height: 80vh;
+  width: 60%;
+  font-family: 'Lato', sans-serif;
+}
+.task {
+  font-size: 1rem;
+}
+.mybtn{
+  padding: 0.3rem 1rem;
+  background-color: #502f61;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  margin-right: 1rem;
+}
+.mybtn:hover{
+  background-color: #3e2849;
+  transform: scaleX(1.1);
+}
+
+.newtask-box {
+  /* height: 70px; */
+  width: 90%;
+  margin: 10px 0;
+}
+input{
+  padding: 5px 1rem;
+  background-color: #71687e;
+  border: 2px solid black;
+  font-weight: 600;
+}
+#title {
+  width: 80%;
+  border: none;
+}
+.buttons {
+  margin: 10px 0;
+  width: 80%;
+}
+.new:nth-child(1) {
+  margin: 0 5px;
+  margin-left: 0;
+}
+.buttons input[type="date"] {
+  /* margin: 0 10px; */
+  float: right;
+}
+.alert {
+  border: 1px solid red;
+}
+#inbox{
+  transition: all 0.3s linear;
+  margin-top: 0.1rem;
+}
+.box{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  border-radius: 0.4rem;
+  align-items: center;
+  padding: 0.4rem;
+  box-shadow: -5px 5px 4px rgb(40, 42, 44)
+}
+.not-done{
+  background-color: rgb(155, 155, 107);
+}
+.done{
+  background-color: rgb(74, 143, 74);
+}
