@@ -7,6 +7,10 @@
   /* font-family: 'Lato', sans-serif; */
   color: white;
 }
+.row{
+  justify-content: center;
+  align-items: center;
+}
 #main{
   background-color: #502f61;
   min-height: 100vh;
@@ -22,7 +26,7 @@
 }
 .side-nav {
   list-style: none;
-  float: right;
+  /* float: right; */
 }
 .side-nav li {
   box-shadow: -7px 7px 7px rgba(0,0,0);
@@ -127,4 +131,18 @@ input{
 }
 .done{
   background-color: rgb(74, 143, 74);
+}
+
+@media (orientation:portrait) {
+  .main-section{
+    width: 95%;
+    margin: auto;
+  }
+  .mybtn{
+    margin: 0.5rem;
+  }
+  input[type="date"]{
+    margin: 0.5rem;
+    float: unset !important;
+  }
 }
